@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileActivity"
+    android:id="@+id/profileUser"
+    android:orientation="vertical"
+    android:background="@drawable/gradient"
+    android:layout_alignParentStart="true"
+    android:layout_alignParentTop="true">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+
+        android:id="@+id/userView"
+        android:layout_width="206dp"
+        android:layout_height="243dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="28dp"
+        app:srcCompat="@drawable/usercam" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="300dp"
+            android:text="No.Telp Anda :"
+
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/numberText"
+            android:layout_width="149dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="130dp"
+            android:layout_marginTop="300dp"
+
+            android:textSize="16dp" />
+
+        <TextView
+            android:layout_width="102dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="350dp"
+            android:text="Nama Anda :"
+
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/namauserText"
+            android:layout_width="151dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="130dp"
+            android:layout_marginTop="350dp"
+
+            android:textSize="16dp" />
+
+    <Button
+        android:id="@+id/btnEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginBottom="48dp"
+        android:background="@android:color/transparent"
+
+        android:text="Edit" />
+
+
+
+</RelativeLayout>

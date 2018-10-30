@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EventActivity"
+    android:background="@drawable/gradient"
+    android:weightSum="100">
+
+
+    <ImageView
+        android:id="@+id/imageEvent2"
+        android:layout_width="208dp"
+        android:layout_height="170dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:background="@android:color/transparent" />
+
+    <RatingBar
+        android:id="@+id/rating"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+
+        android:layout_marginTop="10dp"
+        android:numStars="5"
+        android:rating="2.0"
+        android:stepSize="1.0" />
+
+    <Button
+        android:id="@+id/btnRate"
+        style="@android:style/Widget.Holo.Light.RatingBar.Small"
+        android:layout_width="70dp"
+        android:layout_height="28dp"
+        android:layout_below="@id/rating"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="5dp"
+
+
+        android:background="@android:color/transparent"
+        android:text="Rate"
+        android:textSize="10dp" />
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="20dp"
+        android:id="@+id/txtRatingValue"
+        android:layout_gravity="center"
+
+        android:textAlignment="center"
+       />
+
+    <TextView
+        android:id="@+id/uy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+      android:layout_marginLeft="20dp"
+        android:text="Lokasi :"
+        android:layout_marginTop="5dp"
+         />
+
+    <TextView
+        android:id="@+id/textLokasi"
+        android:layout_width="359dp"
+        android:layout_height="32dp"
+android:layout_marginLeft="20dp"
+
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/textdes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+
+       android:layout_marginLeft="20dp"
+        android:text="Deskripsi Event :"
+        />
+
+    <TextView
+        android:id="@+id/textDeskripsi"
+        android:layout_width="359dp"
+        android:layout_height="60dp"
+
+        android:layout_marginLeft="20dp"
+
+
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/texttang"
+        android:layout_width="109dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="20dp"
+        android:text="Tanggal/Jam :"
+        />
+
+    <TextView
+        android:id="@+id/textTanggal"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+       android:layout_marginLeft="20dp"
+
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/textJam"
+        android:layout_width="99dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:text="TextView" />
+
+
+</LinearLayout>

@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "190757606934",
+    "firebase_url": "https://bwacoba.firebaseio.com",
+    "project_id": "bwacoba",
+    "storage_bucket": "bwacoba.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:190757606934:android:da8ed2d567a2af6b",
+        "android_client_info": {
+          "package_name": "com.example.joe.bwa"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "190757606934-bhd8bdf22nfjhj6stbbld1p72t2enhh0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.joe.bwa",
+            "certificate_hash": "f6acec98dc0a171fe44989eb8b7c4df1a2f57da9"
+          }
+        },
+        {
+          "client_id": "190757606934-vqfa8darjiaaq82293sdu1n2qojv3vuh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCEZHvJJBjGrDvYPiO-bnKZzLsHhrj7mLk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "190757606934-vqfa8darjiaaq82293sdu1n2qojv3vuh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

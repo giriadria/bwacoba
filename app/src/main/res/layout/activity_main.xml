@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/gradient">
+
+    <LinearLayout
+        android:id="@+id/layout_button"
+        android:orientation="horizontal"
+        android:layout_alignParentTop="true"
+        android:weightSum="2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/buttonChoose"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:text="Ambil Gambar" />
+
+        <Button
+            android:id="@+id/buttonUpload"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:text="Upload" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="127dp"
+        android:layout_height="192dp"
+        android:layout_below="@+id/layout_button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="9dp"
+        android:foregroundGravity="center"
+        app:srcCompat="@drawable/akhitam" />
+
+    <EditText
+        android:id="@+id/lokasiText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/imageView"
+        android:layout_marginTop="14dp"
+        android:hint="Masukan Lokasi"
+        android:maxLength="40"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/tentangText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/lokasiText"
+        android:layout_marginTop="47dp"
+        android:hint="Deskripsi Event"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/jamText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/lokasiText"
+        android:layout_marginTop="49dp"
+        android:ems="10"
+        android:maxLength="160"
+        android:inputType="none"
+        android:textIsSelectable="true"
+        android:hint="Waktu/Jam"
+        />
+
+    <EditText
+        android:id="@+id/tglText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/jamText"
+        android:ems="10"
+        android:hint="Tanggal"
+        android:inputType="none"
+        android:textIsSelectable="true"
+        android:maxLength="11" />
+
+    <EditText
+        android:id="@+id/namaText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/tglText"
+        android:hint="Nama Event"
+        android:maxLength="20"
+        android:inputType="text" />
+
+
+
+
+</RelativeLayout>

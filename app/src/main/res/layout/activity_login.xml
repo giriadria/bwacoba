@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/gradient"
+
+    tools:context=".Login">
+
+
+<RelativeLayout
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="250dp"
+    android:gravity="center_horizontal">
+
+    <TextView
+        android:id="@+id/no_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/phone"
+        android:layout_alignBottom="@+id/phone"
+        android:layout_alignStart="@+id/setVerifi"
+        android:text="+62"
+
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/phone"
+        style="@android:style/Widget.Holo.EditText"
+        android:layout_width="308dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="50dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="20dp"
+        android:layout_toRightOf="@+id/no_id"
+        android:background="#11000000"
+        android:drawableRight="@drawable/ic_number"
+        android:ems="10"
+        android:hint="Masukan Nomor Telepon Anda"
+        android:inputType="phone"
+        android:textSize="14sp" />
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="53dp"
+        android:layout_height="33dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="47dp"
+        android:background="@android:color/transparent"
+        android:gravity="center"
+        android:text="KIRIM"
+        android:textSize="14sp"
+        />
+
+    <EditText
+        android:id="@+id/setVerifi"
+        android:layout_width="228dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/verifi"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="29dp"
+        android:background="#11000000"
+
+        android:drawableRight="@drawable/ic_digit"
+        android:ems="10"
+        android:hint="Masukan 6 Digit Kode"
+        android:textSize="14sp"
+        android:inputType="number"
+        android:maxLength="6" />
+
+    <Button
+        android:id="@+id/verifi"
+        android:layout_width="92dp"
+        android:layout_height="32dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="22dp"
+        android:layout_marginTop="117dp"
+        android:background="@android:color/transparent"
+        android:text="Verifikasi"
+        android:textSize="14sp"
+        />
+
+
+    <Button
+        android:id="@+id/resend"
+        android:layout_width="100dp"
+        android:layout_height="29dp"
+        android:layout_alignParentBottom="true"
+
+        android:layout_alignStart="@+id/no_id"
+        android:layout_marginBottom="115dp"
+        android:background="@android:color/transparent"
+        android:text="RESEND"
+        android:textSize="14sp"
+         />
+
+</RelativeLayout>
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="wrap_content"
+        android:layout_height="115dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="101dp"
+        app:srcCompat="@mipmap/ic_launcher_uy" />
+</RelativeLayout>

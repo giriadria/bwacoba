@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.joe.bwa"
+   >
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_uy"
+        android:label="EventWhere"
+        android:roundIcon="@mipmap/ic_uy_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        >
+        <activity
+            android:name=".MainActivity"
+            android:label="Upload Event"
+            android:parentActivityName=".ShowImagesActivity"
+            android:theme="@style/uye"/>
+        <activity android:name=".Login"
+            android:theme="@style/euy"/>
+        <activity android:name=".ShowImagesActivity">
+
+        </activity>
+        <activity
+            android:name=".Splash"
+            android:theme="@style/generalnotitle">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+        <activity
+            android:name=".ProfileActivity"
+            android:label="Profile"
+            android:parentActivityName=".ShowImagesActivity"
+            android:theme="@style/uye">
+
+        </activity>
+        <activity
+            android:name=".AppInfo"
+            android:label="AppInfo"
+            android:parentActivityName=".ShowImagesActivity"
+            android:theme="@style/uye"></activity>
+        <activity android:name=".EditUser"
+            android:theme="@style/euy">
+
+
+        </activity>
+        <activity android:name=".User" />
+        <activity
+            android:name=".SettingUser"
+            android:label="Edit Profile"
+            android:parentActivityName=".UserImageActivity"
+            android:theme="@style/uye">
+        </activity>
+        <activity
+            android:name=".UserImageActivity"
+            android:label="Profile"
+            android:parentActivityName=".ShowImagesActivity"
+            android:theme="@style/uye"/>
+        <activity
+            android:name=".EventActivity"
+            android:parentActivityName=".ShowImagesActivity"
+            android:theme="@style/uye"/>
+        <activity android:name=".GambarBesar"
+            android:theme="@style/generalnotitle"
+            android:parentActivityName=".EventActivity"></activity>
+    </application>
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+
+</manifest>
